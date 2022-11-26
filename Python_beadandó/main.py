@@ -19,7 +19,7 @@ background_image= tkinter.PhotoImage(file='./img/bg.png')
 background_label= tkinter.Label(window, image=background_image)
 background_label.place(x=0,y=0,relwidth=1,relheight=1)
 
-welcomeText = tkinter.Label(text="Költéség Manager",font=('Verdana', 40, 'bold'),pady=10, padx=10)
+welcomeText = tkinter.Label(text="Költségvetés Manager",font=('Verdana', 40, 'bold'),pady=10, padx=10)
 welcomeText.pack()
 
 
@@ -67,7 +67,6 @@ my_result = my_cursor.fetchone()
 while my_result is not None:
     outcome_list.insert(1,my_result)
     my_result = my_cursor.fetchone()
-
 
 
 
